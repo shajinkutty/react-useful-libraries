@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Lists from "./Lists";
+import ReactIcons from "./components/ReactIcons/ReactIcons";
+import Toast from "./components/Toast/Toast";
+import ShowModal from "./components/modal/Modal";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Router>
+        <Lists />
+        <Switch>
+          <Route path="/react-icons">
+            <ReactIcons />
+          </Route>
+          <Route path="/toast">
+            <Toast />
+          </Route>
+          <Route path="/modal">
+            <ShowModal />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
