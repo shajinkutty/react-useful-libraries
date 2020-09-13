@@ -11,6 +11,7 @@ import Countup from "./components/Countup/Countup";
 import IdleTimerComponent from "./components/Idle Timer/IdleTimer";
 import ColorPickerContainer from "./components/Color Picker/ColorPickerContainer";
 import CreditCards from "./components/Credit Cards/CreditCards";
+import DatePickerContainer from "./components/Date Picker/DatePickerContainer";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route path="/credit-cards">
             <CreditCards />
+          </Route>
+          <Route path="/date-picker">
+            <DatePickerContainer />
           </Route>
           <Route path="/">
             <Home />
