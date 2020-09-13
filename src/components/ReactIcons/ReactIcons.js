@@ -3,21 +3,16 @@ import { IconContext } from "react-icons";
 import { FaReact, FaFacebookSquare } from "react-icons/fa";
 import { MdGames } from "react-icons/md";
 import { IoIosChatbubbles, IoLogoBitcoin } from "react-icons/io";
+import Header from "../../Header";
 
 function ReactIcons() {
   return (
     <div>
-      <h1>React Icons</h1>
-      <p>
-        Docs:
-        <a
-          href="https://react-icons.github.io/react-icons/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click Here
-        </a>
-      </p>
+      <Header
+        title="React Icons"
+        link="https://react-icons.github.io/react-icons/"
+      />
+
       <h3>Simple icon</h3>
       <FaReact size="10rem" />
       <FaFacebookSquare size="12rem" color="blue" title="facebook" />

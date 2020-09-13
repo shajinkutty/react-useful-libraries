@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
+import Header from "../../Header";
 
 const ColoredComponent = ({ title }) => {
   return <span style={{ color: "orange" }}>{title}</span>;
@@ -17,17 +18,8 @@ const CustomChild = forwardRef((props, ref) => {
 function ToolTip() {
   return (
     <div>
-      <h1>Tooltip</h1>
-      <p>
-        Docs:
-        <a
-          href="https://github.com/atomiks/tippyjs-react"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click Here
-        </a>
-      </p>
+      <Header title="Tooltip" link="https://github.com/atomiks/tippyjs-react" />
+
       <div style={{ paddingBottom: "1rem" }}>
         <Tippy content="ToolTip">
           <button>Hover</button>
@@ -41,6 +33,11 @@ function ToolTip() {
       <div style={{ paddingBottom: "1rem" }}>
         <Tippy delay={1000} content="ToolTip">
           <button>Delay 1s</button>
+        </Tippy>
+      </div>
+      <div style={{ paddingBottom: "1rem" }}>
+        <Tippy placement="left" content="ToolTip">
+          <button>Placement left</button>
         </Tippy>
       </div>
       <div style={{ paddingBottom: "1rem" }}>

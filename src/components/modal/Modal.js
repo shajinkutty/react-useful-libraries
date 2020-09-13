@@ -1,21 +1,13 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Header from "../../Header";
 
 function ShowModal() {
   const [modal, setModal] = useState(false);
   return (
     <div>
-      <h1>Modal</h1>
-      <p>
-        Docs:
-        <a
-          href="http://reactcommunity.org/react-modal/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click Here
-        </a>
-      </p>
+      <Header title="Modal" link="http://reactcommunity.org/react-modal/" />
+
       <button onClick={() => setModal(true)}>Open Modal</button>
       <Modal
         isOpen={modal}

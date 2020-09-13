@@ -1,6 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Header from "../../Header";
 
 toast.configure({
   hideProgressBar: true,
@@ -24,17 +25,11 @@ function Toast() {
   };
   return (
     <div>
-      <h1>Toastificaions</h1>
-      <p>
-        Docs:
-        <a
-          href="https://fkhadra.github.io/react-toastify/introduction/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click Here
-        </a>
-      </p>
+      <Header
+        title="Toastify"
+        link="https://fkhadra.github.io/react-toastify/introduction/"
+      />
+
       <button onClick={toastify}>Notify</button>
     </div>
   );
