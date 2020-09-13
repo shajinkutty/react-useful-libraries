@@ -13,6 +13,7 @@ const links = [
   { to: "/credit-cards", title: "Credit Cards" },
   { to: "/date-picker", title: "Date Picker" },
   { to: "/loading-spinner", title: "Loading Spinner" },
+  { to: "/charts", title: "Charts" },
 ];
 
 function Lists() {

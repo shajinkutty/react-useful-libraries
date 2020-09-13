@@ -13,6 +13,7 @@ import ColorPickerContainer from "./components/Color Picker/ColorPickerContainer
 import CreditCards from "./components/Credit Cards/CreditCards";
 import DatePickerContainer from "./components/Date Picker/DatePickerContainer";
 import LoadingSpinners from "./components/Spinners/LoadingSpinners";
+import ChartContainer from "./components/Charts/ChartContainer";
 
 function App() {
   return (
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route path="/loading-spinner">
             <LoadingSpinners />
+          </Route>
+          <Route path="/charts">
+            <ChartContainer />
           </Route>
           <Route path="/">
             <Home />
