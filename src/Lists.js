@@ -9,6 +9,7 @@ const links = [
   { to: "/tippy", title: "Tippy" },
   { to: "/count-up", title: "Count Up" },
   { to: "/idle-timer", title: "Idle Timer" },
+  { to: "/color-picker", title: "Color Picker" },
 ];
 
 function Lists() {
