@@ -21,3 +21,6 @@ ul li a {
   background-color: #595959;
   height: 100%;
 }
+.loading__container {
+  display: flex;
+}

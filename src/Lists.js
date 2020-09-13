@@ -12,6 +12,7 @@ const links = [
   { to: "/color-picker", title: "Color Picker" },
   { to: "/credit-cards", title: "Credit Cards" },
   { to: "/date-picker", title: "Date Picker" },
+  { to: "/loading-spinner", title: "Loading Spinner" },
 ];
 
 function Lists() {

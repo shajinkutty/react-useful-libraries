@@ -12,6 +12,7 @@ import IdleTimerComponent from "./components/Idle Timer/IdleTimer";
 import ColorPickerContainer from "./components/Color Picker/ColorPickerContainer";
 import CreditCards from "./components/Credit Cards/CreditCards";
 import DatePickerContainer from "./components/Date Picker/DatePickerContainer";
+import LoadingSpinners from "./components/Spinners/LoadingSpinners";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route path="/date-picker">
             <DatePickerContainer />
+          </Route>
+          <Route path="/loading-spinner">
+            <LoadingSpinners />
           </Route>
           <Route path="/">
             <Home />
