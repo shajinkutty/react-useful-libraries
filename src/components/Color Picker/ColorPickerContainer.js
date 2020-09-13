@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SketchPicker, AlphaPicker } from "react-color";
+import { SketchPicker } from "react-color";
 import Header from "../../Header";
 
 function ColorPickerContainer() {
