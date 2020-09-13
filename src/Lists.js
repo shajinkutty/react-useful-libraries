@@ -17,6 +17,9 @@ function Lists() {
         <li>
           <Link to="/modal">Modal</Link>
         </li>
+        <li>
+          <Link to="/tippy">Tippy</Link>
+        </li>
       </ul>
     </div>
   );

@@ -5,6 +5,8 @@ import Lists from "./Lists";
 import ReactIcons from "./components/ReactIcons/ReactIcons";
 import Toast from "./components/Toast/Toast";
 import ShowModal from "./components/modal/Modal";
+import ToolTip from "./components/tooltip/ToolTip";
+import Home from "./Home";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
           </Route>
           <Route path="/modal">
             <ShowModal />
+          </Route>
+          <Route path="/tippy">
+            <ToolTip />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </Router>
